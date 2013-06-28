@@ -1,0 +1,125 @@
+.person_text{
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+
+
+.person_heading{
+	margin-top: 25px;
+}
+
+.bigger_text{
+	font-size: 20px;
+}
+
+.experience_text{
+	font-size: 18px;
+}
+
+.link_size{
+	font-size: 16px;
+}
+
+.skills_layout{
+	-moz-column-count: 3;
+  	-webkit-column-count: 3;
+  	column-count: 3;
+	float: left;
+    width: 650px;
+}
+
+.about_div{
+	background-color:#EEFFFF;
+}
+
+.skills_div{
+	background-color:#F5F5F5;
+}
+	
+.section_divs{
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+	margin-bottom: 40px;
+}	
+
+.project_div_pic{
+	vertical-align: top;
+	display:inline-block;
+	margin-left: 50px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+
+}	
+
+.project_div{
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 350px;
+	margin-top:-150px;
+	
+}	
+
+.link_div{
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 350px;
+	margin-top:-90px;
+	
+}	
+
+.experience_div_pic{
+	vertical-align: top;
+	display:inline-block;
+	margin-left: 500px;
+	margin-bottom: 15px;
+	margin-top: -190px;
+	
+}
+
+.experience_div{
+	vertical-align: top;
+	display: inline-block;
+	margin-left:50px;
+	margin-right: 300px;
+}	
+
+.experience_div_lower{
+	vertical-align: top;
+	display: inline-block;
+	margin-right: 400px;
+	margin-left:50px;
+	
+}	
+
+.myname_div{
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 450px;
+	margin-top:-240px;
+	
+}		
+
+.myinfo_div{
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 450px;
+	margin-top:-120px;
+	
+}			
+
+.skills_list{
+	vertical-align: top;
+	display:inline-block;
+	margin-left: 50px;
+}	
+
+.lower_skills_list{
+	vertical-align: top;
+	display:inline-block;
+	margin-left: 100px;
+}	
