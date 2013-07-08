@@ -1,5 +1,5 @@
 from django.db import models
-
+from datetime import datetime
 class Person(models.Model):
     firstname = models.CharField(max_length=50)
     lastname = models.CharField(max_length=50)
@@ -29,7 +29,7 @@ class Projects(models.Model):
 class Experience(models.Model):
     company = models.CharField(max_length=50)
     begin_date = models.DateField(auto_now=False, auto_now_add=False)    
-    end_date = models.DateField(auto_now=True, auto_now_add=False)   
+    end_date = models.DateField(default = None,null=True, blank=True, auto_now_add=False)   
     title = models.CharField(max_length=50)
     description = models.CharField(max_length=250)
     description_2 = models.CharField(max_length=250, default=True)

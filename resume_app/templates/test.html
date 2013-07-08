@@ -384,9 +384,7 @@
       <!-- START THE FEATURETTES -->
 
       <!--<hr class="featurette-divider">-->
-      
-      
-	
+ 	
 <div id="skills" class="skills_div section_divs">
 
 	<div class="row">
@@ -394,29 +392,28 @@
         	<h2 class="featurette-heading">Skills</h2>
         </div>	
     </div>
-    
-    <div class="row-fluid">
-      	
-		<div class="bigger_text">
-			<div class='skills_list' >
-				{% for category,skill_list in category_skill_list.items %}
-				{% if forloop.counter0|divisibleby:3 %}
-			
-				{%endif %}
-			</div>			
+    <div class="row">
+    	<div class="bigger_text">
 			<div class='skills_list'>
-				<h3>{{category}}</h3>
-					{% for skill in skill_list %}
-						<p>{{skill}}</p>
-					{% endfor %}
+			</div>	
+			
+			{% for category,skill_list in category_skill_list.items %}
+				{% if forloop.counter0|divisibleby:3 %}
+					<div class="row-fluid">
+				{%endif %}
+			
 					
-					{% if forloop.last or forloop.counter|divisibleby:3 %}
-					
-					{% endif %}
-						
-					{% endfor %}
-				
-			</div>
+						<div class='skills_list'>
+							<h3>{{category}}</h3>
+								{% for skill in skill_list %}
+									<p>{{skill}}</p>
+								{% endfor %}
+						</div>
+				{% if forloop.counter|divisibleby:3 or forloop.last %}
+					</div>
+				{% endif %}
+			{% endfor %}
+			
 		</div>	
 	</div>		
 </div>
@@ -449,9 +446,7 @@
 		<div class="link_div">
 			<a href="http://www.laurenslimdown.com">View My Project laurenslimdown.com</a>
 		</div>			
-		
 	</div>      
-	
 </div>	
   
 <div id="experience" class="skills_div section_divs">
@@ -462,14 +457,18 @@
 		</div>   
 	</div>
 		<div class="row-fluid">
-	
 	        
 		{% for experience in experience_list %}
 			<div class="experience_div">
 				<div class="experience_text">	
 					<p><strong>{{experience.company}}</strong><br>
-					{{experience.begin_date}} - {{experience.end_date}}<br>
+					{% if not experience.end_date %}
+						{{experience.begin_date}} - Present<br>
+					{% else %}	
+						{{experience.begin_date}} - {{experience.end_date}}<br>
+					{% endif %}
 					{{experience.title}}</p>
+					
 				</div>
 			</div>
 			
@@ -483,7 +482,6 @@
 				</div>
 			</div>	
 		{% endfor %}
-		
 		
       	<div class="experience_div_pic"> 	   
         	<img src="{{STATIC_URL}}img/examples/experience.jpg" style="width:300px; height:150px;">

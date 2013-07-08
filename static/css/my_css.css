@@ -115,11 +115,8 @@
 .skills_list{
 	vertical-align: top;
 	display:inline-block;
-	margin-left: 50px;
+	margin-left: 85px;
+	margin-bottom: 15px;
+	max-width: 220px;
 }	
 
-.lower_skills_list{
-	vertical-align: top;
-	display:inline-block;
-	margin-left: 100px;
-}	
