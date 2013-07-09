@@ -107,6 +107,8 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
+
+
 #map_canvas img,
 .google-maps img {
   max-width: none;
