@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Carousel Template &middot; Bootstrap</title>
+    <title>Lauren McBride &middot; Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -31,7 +31,7 @@
     /* Special class on .container surrounding .navbar, used for positioning it into place. */
     .navbar-wrapper {
       position: fixed;
-      top: 0;
+      top: -20px;
       left: 0;
       right: 0;
       z-index: 10;
@@ -394,16 +394,16 @@
     </div>
     <div class="row">
     	<div class="bigger_text">
-			<div class='skills_list'>
+			<div class='skills_list span4'>
 			</div>	
 			
 			{% for category,skill_list in category_skill_list.items %}
 				{% if forloop.counter0|divisibleby:3 %}
-					<div class="row-fluid">
+					<div class="row-fluid span4">
 				{%endif %}
 			
 					
-						<div class='skills_list'>
+						<div class='skills_list span4'>
 							<h3>{{category}}</h3>
 								{% for skill in skill_list %}
 									<p>{{skill}}</p>
