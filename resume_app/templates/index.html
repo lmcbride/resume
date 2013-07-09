@@ -389,17 +389,15 @@
 
 	<div class="row">
 		<div align="center">
-        	<h2 class="featurette-heading span6">Skills</h2>
+        	<h2 class="featurette-heading" style="margin-left: auto">Skills</h2>
         </div>	
     </div>
     <div class="row">
     	<div class="bigger_text">
-			<div class='skills_list span4'>
-			</div>	
 			
 			{% for category,skill_list in category_skill_list.items %}
 				{% if forloop.counter0|divisibleby:3 %}
-					<div class="row-fluid span4">
+					<div class="row-fluid" style="width:90%; margin-left: 50px; margin-bottom: 15px;">
 				{%endif %}
 			
 					
