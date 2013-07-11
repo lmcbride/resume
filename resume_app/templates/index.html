@@ -294,6 +294,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#links">Links</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                
                   </ul>
@@ -440,11 +441,7 @@
 		</div>	
 	</div>		
 		
-	<div class="link_size">
-		<div class="link_div">
-			<a href="http://www.laurenslimdown.com">View My Project laurenslimdown.com</a>
-		</div>			
-	</div>      
+	
 </div>	
   
 <div id="experience" class="skills_div section_divs">
@@ -486,6 +483,33 @@
      	</div>
 	</div>      
 </div>
+  
+
+<div id="links" class="about_div section_divs">
+
+	<div class="row">
+		<div align="center">
+			<h2 class="featurette-heading">Links</h2>	
+        </div>
+    </div>  
+    
+     <div class="row-fluid">
+      	
+        <div class="link_size">
+				
+			{% for link in link_list %}
+					<li>
+					<p>{{link.links}}</p>
+					<p>{{link.description}}</p>
+					</li>
+				
+			{% endfor %}
+		</div> 	
+	</div>	
+</div>		
+		
+	
+
   
 
       <!-- /END THE FEATURETTES -->

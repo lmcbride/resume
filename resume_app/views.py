@@ -18,5 +18,6 @@ def home(request):
            'category_list':Category.objects.all(),
            'category_skill_list':category_skill_list,
            'project_list':Projects.objects.all(),
-           'experience_list':Experience.objects.all()}
+           'experience_list':Experience.objects.all(),
+           'link_list':Links.objects.all()}
 

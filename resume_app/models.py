@@ -31,8 +31,12 @@ class Experience(models.Model):
     begin_date = models.DateField(auto_now=False, auto_now_add=False)    
     end_date = models.DateField(default = None,null=True, blank=True, auto_now_add=False)   
     title = models.CharField(max_length=50)
+    #wtf is this stupid shit?
     description = models.CharField(max_length=250)
     description_2 = models.CharField(max_length=250, default=True)
     description_3 = models.CharField(max_length=250, default=True)
+
     
-    
+class Links(models.Model):
+    links = models.URLField(max_length=200)
+    description = models.CharField(max_length=200)  
