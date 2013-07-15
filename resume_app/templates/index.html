@@ -494,17 +494,22 @@
     </div>  
     
      <div class="row-fluid">
-      	
-        <div class="link_size">
-				
-			{% for link in link_list %}
-					<li>
-					<p>{{link.links}}</p>
-					<p>{{link.description}}</p>
-					</li>
-				
-			{% endfor %}
-		</div> 	
+      	<div class="links_div">
+	        <div class="link_size">
+					
+				{% for link in link_list %}
+						<ul>
+							<p>{{link.links}}</p>
+							<div class="bigger_text">
+								<li>
+								<p>{{link.description}}</p>
+								</li>
+							</div>
+						</ul>
+					
+				{% endfor %}
+			</div> 
+		</div>		
 	</div>	
 </div>		
 		
