@@ -17,7 +17,7 @@
 }
 
 .link_size{
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .skills_layout{
@@ -119,12 +119,5 @@
 	margin-left: 70px;
 	margin-bottom: 20px;
 	max-width: 220px;
-}	
-
-.links_div{
-	vertical-align: top;
-	display: inline-block;
-	margin-left:50px;
-	
 }	
 
