@@ -496,18 +496,13 @@
      <div class="row-fluid">
       	<div style="margin-left: 50px">
 	        <div class="link_size">
-					
-				{% for link in link_list %}
-						<ul>
-							<p>{{link.links}}</p>
-							<div style="margin-left: 75px; font-size: 20px">
-								<li>
-								<p>{{link.description}}</p>
-								</li>
-							</div>
-						</ul>
-					
-				{% endfor %}
+				<ul>	
+					{% for link in link_list %}
+						<li style="margin-left: 50px; font-size: 20px">
+							<a href="{{link.links}}">{{link.description}}</a>
+						</li>		
+					{% endfor %}
+				</ul>
 			</div> 
 		</div>		
 	</div>	
